@@ -29,13 +29,14 @@ def desenho_triangulo(x, y, cateto, hipotenusa, color):
 
     t.begin_fill()
     t.fillcolor(color)
-    t.fd(45)
+    t.fd(60)
     t.fd(200)
     for _ in range(2):
         t.rt(120)
         t.fd(cateto)
     t.rt(120)
     t.fd(hipotenusa)
+    t.end_fill()
 
 
 
@@ -136,7 +137,7 @@ t.clear()
 def desenho_bandeira_bahamas():
     desenho_retangulo(-300, -150, 600, 300, "#027387")
     desenho_retangulo(-300, -50, 600, 100, "#F7C12B")
-    desenho_triangulo(-300, 150, 200, 300, "black")
+    desenho_triangulo(-300, 150, 300, 300, "black")
 
 desenho_bandeira_bahamas()
 sleep(5)
